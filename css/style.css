@@ -1,0 +1,331 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Snap ITC';
+	cursor:url("../img/mouse.png"),auto;
+}
+.intrvideo{
+	position: absolute;
+	top: 400px;
+	left: 340px;
+	
+}
+
+#canvas{
+	position: absolute;
+}
+
+#sence1{
+	position: absolute;
+	width: 1537px;
+	height: 860px;
+}
+
+#sence2{
+	position: absolute;
+	width: 1537px;
+	height: 860px;
+	display: none;
+}
+
+#sence3{
+	position: absolute;
+	width: 1537px;
+	height: 860px;
+	display: none;
+}
+
+#gameName{
+	position: absolute;
+	margin: 20px auto;
+	width: 1000px;
+	height: 100px;
+	top: 100px;
+	left: 400px;
+	color: white;
+	font-size: 100px;
+	animation: nameSize 4s infinite;
+}
+
+#box{
+	margin: 0px auto;
+	width: 300px;
+	height: 280px;
+	bottom: 100px;
+	position: absolute;
+	left: 990px;
+	font-size: 26px;
+}
+
+#box .link{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 205px;
+	height: 240px;
+	margin: 0px 60px;
+	float: left;
+}
+
+.link .icon{
+	display: block;
+	width: 100%;
+	height: 190px;
+	transition: all 0.5s;
+}
+
+.link-mission .icon{
+	background: url(../img/doge.png) no-repeat center center;
+	transform: scale(0.8) translateX(-10px);
+}
+
+.link:hover .icon{
+	transform:  scale(1) translateX(-10px);
+}
+
+.btn{
+	display: block;
+	width: 180px;
+	height: 50px;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin: 0px auto;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	font-weight: bolder;
+	padding-left: 20px;
+	background: url(../img/allow.png) no-repeat 130px center;
+	transition: all 1s;
+	position: relative;
+}
+
+.btn:hover{
+	background: url(../img/allow.png) no-repeat 165px center;
+}
+
+.btn .line{
+	display: block;
+	position: absolute;
+	transition: all 0.5s;
+	background: none;
+}
+
+.btn:hover .line{
+	background: white;
+}
+
+.btn .line-top{
+	width: 0px;
+	height: 2px;
+	left: -100%;
+	top:-2px;
+}
+
+.btn:hover .line-top{
+	width: 100px;
+	left: 0%;
+}
+
+.btn .line-left{
+	width: 2px;
+	height: 0px;
+	top:-150%;
+	left:-2px;
+}
+
+.btn:hover .line-left{
+	height: 50px;
+	top: 0%;
+}
+
+.btn .line-bottom{
+	width: 0px;
+	height: 2px;
+	margin: 50px 0px;
+	right: -100%;
+}
+
+.btn:hover .line-bottom{
+	width: 100px;
+	right: 0%;
+}
+
+.btn .line-right{
+	width: 2px;
+	height: 0px;
+	margin: 0px 180px;
+	bottom: -150%;
+}
+
+.btn:hover .line-right{
+	height: 50px;
+	bottom: 0%;
+}
+
+.intrbox{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+
+.intr{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	transition: 1s all;
+}
+
+.intr4{
+	transform: scale(1.1);
+}
+
+.intr3{
+	transform: scale(1.1) translateY(-400px) rotate(360deg);
+}
+
+.intr2{
+	transform: scale(1.1) translateX(1020px) rotate(360deg);
+}
+
+.intr1{
+	transform: scale(1.1) translateX(1020px) translateY(-400px);
+}
+
+#sence2 .next{
+	position: absolute;
+	transform: rotate(45deg);
+	right: 60px;
+	top: 410px;
+}
+#sence2 .nextT{
+	color: burlywood;
+	position: absolute;
+	font-size: 20px;
+	right: 50px;
+	top: 450px;
+}
+#sence2 .last{
+	position: absolute;
+	transform: rotate(-135deg);
+	left: 60px;
+	top: 410px;
+}
+#sence2 .lastT{
+	color: burlywood;
+	position: absolute;
+	font-size: 20px;
+	left: 50px;
+	top: 450px;
+}
+
+#sence2 #intrText{
+	color: bisque;
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	list-style: none;
+	font-size: 30px;
+}
+
+#sence2 #intrText li{
+	font-family: "STHupo";
+	margin-top: 30px;
+	width: 650px;
+	height: 30px;
+	overflow: hidden;
+	-webkit-animation: type 2s steps(50, end) forwards;
+    animation: type 2s steps(50, end) forwards;
+    display: none;
+}
+
+@-webkit-keyframes type{
+    from { width: 0;}
+}
+
+@keyframes type{
+    from { width: 0;}
+}
+
+@keyframes nameSize{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
+
+#sence3 {
+	position: absolute;
+	width: 1537px;
+	height: 860px;
+	display: none;
+}
+
+#sence3 #pic {
+	width: 300px;
+	height: 300px;
+	left: 635px;
+	top:200px;
+	position: absolute;
+	background: url(../img/load.gif) no-repeat;
+}
+
+#sence3 #spans {
+	width: 400px;
+	height: 50px;
+	left: 635px;
+	top: 500px;
+	position: absolute;
+	color: lightgoldenrodyellow;
+	font-size: 40px;
+}
+
+#sence3 #spans span {
+	position: relative;
+	float: left;
+	top: 10px;
+}
+
+#sence4{
+	background: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+}
+
+#level{
+	position: absolute;
+	top: 50px;
+	left: 640px;
+	color: white;
+	font-size: 50px;
+}
+
+#game{
+	position: absolute;
+	margin: 0 auto;
+	width: 512px;
+	top: 20%;
+	left: 0%;
+	right: 0%;
+}
+
+.wrapper {
+	position: absolute;
+  	margin: 20px auto;
+  	text-align: center;
+  	top:100px;
+  	left: 50px;
+}
+
+.wrapper1 {
+	position: absolute;
+  	margin: 20px auto;
+  	text-align: center;
+  	top:100px;
+  	right: 50px;
+}

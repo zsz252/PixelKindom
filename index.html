@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<div id="sence1">
+			<div id="gameName"><span style="color:skyblue;">P</span>i<span style="color: chartreuse;">x</span>e<span style="color: darkorange;">l</span> <span style="color: red;font-size: 125px;">K</span>i<span style="color: gold;">n</span>g<span style="color: pink;">d</span>o<span style="color:  brown;">m</span></div>
+			<div id="box">
+				<div class="link link-mission">
+					<span class="icon"></span>
+					<a href="#" class="btn">
+						<span class="line line-top"></span>
+						<span class="line line-left"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+					Play
+					</a>
+				</div>
+			</div>
+			<video class="intrvideo" width="640" height="360"  autoplay="autoplay">
+  				<source src="mp4/intro.mp4" type="video/mp4"/>
+			</video>
+		</div>
+		<div id="sence2">
+			<div class="intrbox">
+				<img class="intr intr1" src="img/intr1.png"/>
+				<img class="intr intr2" src="img/intr2.png"/>
+				<img class="intr intr3" src="img/intr3.png"/>
+				<img class="intr intr4" src="img/intr4.png"/>
+			</div>
+			<img class="next" src="img/arrow32.png"/>
+			<span class="nextT">next</span>
+			<img class="last" src="img/arrow32.png"/>
+			<span class="lastT">last</span>
+			<ul id="intrText">
+				<li class="l1">故事发生在一个富饶和平的国家——法伦王国。</li>
+				<li class="l2">某一天，怪物突袭首都迪亚城并将国王亚斯艾尔杀害。</li>
+				<li class="l3">由于王位的继承人王子赛里欧斯在外历练逃过一劫。</li>
+				<li class="l4">赛里欧斯王子在教官拉耶尔的照顾下，</li>
+				<li class="l5">在撒斯艾岛上的艾尔亚斯塔度过了十个寒暑。</li>
+				<li class="l6">他很勇敢，也很善良。</li>
+				<li class="l7">赛里欧斯王子为了夺回政权，</li>
+				<li class="l8">在各地集合了反亚氏的义军，展开了复国之战。</li>
+				<li class="l9">但是...</li>
+				<li class="l10">tips：撞到怪物或火上身上会死掉</li>
+				<li class="l11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;各种地形也有不同效果</li>
+			</ul>
+		</div>
+		<div id="sence3">
+			<div id="pic"></div>
+			<div id="spans">
+				<span class="s1">L</span>
+				<span class="s2">O</span>
+				<span class="s3">A</span>
+				<span class="s4">D</span>
+				<span class="s5">I</span>
+				<span class="s6">N</span>
+				<span class="s7">G</span>
+				<span class="s8">...</span>
+			</div>
+		</div>
+		<div id="sence4">
+			<div id="level">Misson 1</div>
+			<div id="game">
+			</div>
+			<div class="wrapper">
+				<canvas id="surface"></canvas>
+			</div>
+			<div class="wrapper1">
+				<canvas id="surface1"></canvas>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="js/const.js"></script>
+	<script type="text/javascript" src="js/hero.js" ></script>
+	<script type="text/javascript" src="js/monster.js" ></script>
+	<script type="text/javascript" src="js/prepare.js" ></script>
+	<script type="text/javascript" src="js/map.js" ></script>
+	<script type="text/javascript" src="js/ball.js" ></script>	
+	<script type="text/javascript" src="js/intr.js" ></script>
+	<script type="text/javascript" src="js/fire.js" ></script>
+	<script type="text/javascript" src="js/result.js" ></script>
+	<script type="text/javascript" src="js/start.js" ></script>
+</html>
